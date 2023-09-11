@@ -1,10 +1,20 @@
 
-In this project we want to forcast population of different countries in 6 years in future. we have two approches to address this: 1.deploy machine learning model on all of our countries
-2.deploy 159 model on each country then get a average of their lossess
+In this project, we want to forecast the population of different countries in 6 years in the future. We have two approaches to address this: 1. deploy a machine learning model on all of our countries
+2. Deploy 159 model in each country then get an average of their loss.
  
-# 1 Population Prediction for 159 Countries using Machine Learning
+# 1 Population Prediction for 159 Countries Using Machine Learning
 
  We explore the performance of different regression models and hyperparameter tuning methods to achieve the best results. Below is a summary of our findings:
+ ## Data Preprocessing for Time Series Prediction
+This code snippet is part of a data preprocessing pipeline designed for time series prediction. It processes a DataFrame df containing population data, where 'M49' is a country or region code, and 'pop_value' is the population value. The goal is to create input-output pairs for training a time series prediction model.
+
+- Parameters
+window_size = 6: This parameter determines the size of the input sequence. It specifies how many previous population values should be considered to predict the next value.
+- Train-Test Split
+A cutoff index is calculated, representing 90% of the data length. This will be used to split the data into training and testing sets.
+The data is split into training and testing sets using the calculated cutoff index:
+x_train and y_train contain the training input sequences and output values.
+x_test and y_test contain the testing input sequences and output values.
 
 ## Decision Tree Regressor
 
