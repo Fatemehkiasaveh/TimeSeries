@@ -31,8 +31,8 @@ We initially deployed a DecisionTreeRegressor model with the following parameter
 - Mean Absolute Error (MAE): 43,237.67
 
 ### Results after Data Normalization
-- MSE after Normalization: 9,480,184,645.97
-- MAE after Normalization: 43,503.56
+- MSE after Normalization: 26,682,340,733.149246, 
+- MAE after Normalization: 65398.45185185187
 
 ## XGBoost Regressor
 
@@ -44,8 +44,8 @@ Next, we explored the XGBoostRegressor model.
 - colsample_bytree: 0.5
 
 ### Results 
-- MSE after using XGBoost: [62202547285.09498]
-- MAE after using XGBoost: [195396.7268907563]
+- MSE after using XGBoost: [204246947593.85364]
+- MAE after using XGBoost: [260860.72135416666]
 
 ### Results after Hyperparameter Tuning
 Best hyperparameter:  {'colsample_bytree': 0.3, 'eta': 0.3, 'max_depth': 9, 'n_estimators': 200, 'subsample': 0.3}
