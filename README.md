@@ -48,6 +48,9 @@ Next, we explored the XGBoostRegressor model.
 - MAE after using XGBoost: [195396.7268907563]
 
 ### Results after Hyperparameter Tuning
+Best hyperparameter:  {'colsample_bytree': 0.3, 'eta': 0.3, 'max_depth': 9, 'n_estimators': 200, 'subsample': 0.3}
+MSE after using Gridseach + RF: [56347464168.372246]
+MAE after using Gridseach + RF: [185885.08788515406]
 
 
 ## Random Forest Regressor
